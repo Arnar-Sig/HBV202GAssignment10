@@ -19,4 +19,7 @@ public class MultiplyComposite implements Component {
         }
         return sum;
     }
+
+    public void update() {
+    }
 }

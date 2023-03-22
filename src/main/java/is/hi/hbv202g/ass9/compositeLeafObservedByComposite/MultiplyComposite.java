@@ -1,12 +1,15 @@
-package is.hi.hbv202g.ass9.composite;
-
-import is.hi.hbv202g.ass9.composite.Component;
-import is.hi.hbv202g.ass9.composite.NumberLeaf;
+package is.hi.hbv202g.ass9.compositeLeafObservedByComposite;
 
 import java.util.ArrayList;
 
-public class MultiplyComposite implements Component {
+public class MultiplyComposite implements Component, Observer {
     private ArrayList<Component> children = new ArrayList<>();
+
+    public int getLastObservedResult() {
+        return lastObservedResult;
+    }
+
+    private int lastObservedResult;
     public void add(Component number) {
         children.add(number);
     }
@@ -21,5 +24,11 @@ public class MultiplyComposite implements Component {
     }
 
     public void update() {
+        int tempSum = 1;
+        for (Component child :children) {
+            tempSum = tempSum * child.getResult();
+        }
+        lastObservedResult = tempSum;
+        System.out.println(lastObservedResult);
     }
 }

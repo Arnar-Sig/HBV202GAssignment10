@@ -1,6 +1,6 @@
-package is.hi.hbv202g.ass9.composite;
+package is.hi.hbv202g.ass9.compositeLeafObservedByComposite;
 
-public class NumberLeaf implements Component {
+public class NumberLeaf extends Observable implements Component {
     private int number;
 
     public NumberLeaf(int number) {
@@ -8,5 +8,9 @@ public class NumberLeaf implements Component {
     }
     public int getResult() {
         return number;
+    }
+    public void setValue(int number) {
+        this.number = number;
+        notifyObservers();
     }
 }
