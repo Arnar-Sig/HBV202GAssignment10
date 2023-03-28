@@ -1,0 +1,201 @@
+@startuml
+
+title __ASS9's Class Diagram__\n
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      interface is.hi.hbv202g.ass9.composite.Component {
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      class is.hi.hbv202g.ass9.composite.Main {
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      class is.hi.hbv202g.ass9.composite.MultiplyComposite {
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      class is.hi.hbv202g.ass9.composite.NumberLeaf {
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      class is.hi.hbv202g.ass9.composite.PlusComposite {
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedByComposite {
+        interface is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Component {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedByComposite {
+        class is.hi.hbv202g.ass9.compositeLeafObservedByComposite.MultiplyComposite {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedByComposite {
+        class is.hi.hbv202g.ass9.compositeLeafObservedByComposite.NumberLeaf {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedByComposite {
+        abstract class is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observable {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedByComposite {
+        interface is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observer {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedByComposite {
+        class is.hi.hbv202g.ass9.compositeLeafObservedByComposite.PlusComposite {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedTemplateMethod {
+        interface is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Component {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedTemplateMethod {
+        abstract class is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Composite {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedTemplateMethod {
+        class is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.MultiplyComposite {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedTemplateMethod {
+        class is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.NumberLeaf {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedTemplateMethod {
+        abstract class is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Observable {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedTemplateMethod {
+        interface is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Observer {
+        }
+      }
+    }
+  }
+  
+
+  namespace is.hi.hbv202g.ass9 {
+    namespace composite {
+      namespace eafObservedTemplateMethod {
+        class is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.PlusComposite {
+        }
+      }
+    }
+  }
+  
+
+  is.hi.hbv202g.ass9.composite.MultiplyComposite .up.|> is.hi.hbv202g.ass9.composite.Component
+  is.hi.hbv202g.ass9.composite.NumberLeaf .up.|> is.hi.hbv202g.ass9.composite.Component
+  is.hi.hbv202g.ass9.composite.PlusComposite .up.|> is.hi.hbv202g.ass9.composite.Component
+  is.hi.hbv202g.ass9.compositeLeafObservedByComposite.MultiplyComposite .up.|> is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Component
+  is.hi.hbv202g.ass9.compositeLeafObservedByComposite.MultiplyComposite .up.|> is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observer
+  is.hi.hbv202g.ass9.compositeLeafObservedByComposite.NumberLeaf .up.|> is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Component
+  is.hi.hbv202g.ass9.compositeLeafObservedByComposite.NumberLeaf -up-|> is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observable
+  is.hi.hbv202g.ass9.compositeLeafObservedByComposite.PlusComposite .up.|> is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Component
+  is.hi.hbv202g.ass9.compositeLeafObservedByComposite.PlusComposite .up.|> is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observer
+  is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.MultiplyComposite .up.|> is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Component
+  is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.MultiplyComposite .up.|> is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Observer
+  is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.MultiplyComposite -up-|> is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Composite
+  is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.NumberLeaf .up.|> is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Component
+  is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.NumberLeaf -up-|> is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Observable
+  is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.PlusComposite .up.|> is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Component
+  is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.PlusComposite .up.|> is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Observer
+  is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.PlusComposite -up-|> is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod.Composite
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
